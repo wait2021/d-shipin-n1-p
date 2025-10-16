@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>资源抓取任务创建器</title>
+  <title>demo_d_p</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <main class="container">
-    <h1>资源抓取任务创建器</h1>
+    <h1>创建器</h1>
     <p class="desc">
-      填写你的 GitHub 仓库信息与目标网址，点击“生成 Issue 链接”，跳转到 GitHub 的新建 Issue 页面完成提交。
-      提交后，仓库的 Actions 会在带有 fetch-request 标签时下载该网址的资源并提交到仓库的 resources/ 目录。
+      填写你的 gh 信息与目标网址，点击“生成 Issue 链接”，跳转到 gh 的新建 Issue 页面完成提交。
+      提交后，gh的 Actions 会在带有 fetch-request 标签时下该资源并提交到gh的 resources/ 目录。
     </p>
 
     <form id="issueForm" class="form">
-      <label for="ownerInput">GitHub 仓库 owner（用户名或组织名）</label>
+      <label for="ownerInput">Gh 库 owner（用户名或组织名）</label>
       <input id="ownerInput" type="text" placeholder="例如: yourname" required />
 
-      <label for="repoInput">GitHub 仓库名</label>
+      <label for="repoInput">Gh库名</label>
       <input id="repoInput" type="text" placeholder="例如: yourrepo" required />
 
-      <label for="urlInput">目标网址（http 或 https）</label>
+      <label for="urlInput">d网址（http 或 https）</label>
       <input id="urlInput" type="text" placeholder="例如: https://example.com/file.zip" inputmode="url" required />
 
       <div class="row">
@@ -37,7 +37,7 @@
       <ol>
         <li>在上方填写 owner、repo 与目标网址。</li>
         <li>点击“生成 Issue 链接”，再点击右侧“跳转到新建 Issue”。</li>
-        <li>在 GitHub 的 Issue 页面中，手动为该 Issue 添加标签：<strong>fetch-request</strong>，然后提交。</li>
+        <li>在 gt 的 Issue 页面中，手动为该 Issue 添加标签：<strong>fetch-request</strong>，然后提交。</li>
         <li>等待 Actions 执行完成，资源会被下载并提交到仓库的 <code>resources/</code> 目录。</li>
       </ol>
     </section>
